@@ -1,0 +1,60 @@
+/* ==========================================================================
+   1. NAVBAR
+   ========================================================================== */
+.site-header { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: calc(1.4rem + var(--sat)) 0 1.4rem; transition: all var(--dur-s) var(--ease); border-bottom: 1px solid transparent; }
+.site-header.scrolled { background: rgba(243,241,236,.92); -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px); border-bottom: 1px solid rgba(23,23,23,.08); padding: calc(.9rem + var(--sat)) 0 .9rem; }
+.site-header.on-dark { background: rgba(23,23,23,.88); border-bottom-color: rgba(243,241,236,.08); }
+.site-header.on-dark .nav-link { color: var(--cream); }
+.site-header.on-dark .nav-toggle span { background: var(--cream); }
+.site-header.on-dark .brand-logo { filter: invert(1) brightness(1.25); mix-blend-mode: screen; }
+.site-header.menu-open { background: transparent !important; border-bottom-color: transparent !important; -webkit-backdrop-filter: none !important; backdrop-filter: none !important; }
+.site-header.menu-open .brand-logo { filter: invert(1) brightness(1.25); mix-blend-mode: screen; }
+
+.nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; position: relative; }
+.brand { display: flex; align-items: center; flex-shrink: 0; min-height: 44px; z-index: 1002; }
+.brand-logo { height: 30px; width: auto; max-width: 180px; filter: none; mix-blend-mode: multiply; transition: filter var(--dur-s) var(--ease); }
+.site-header:not(.scrolled):not(.on-dark):not(.menu-open) .brand-logo { filter: invert(1) brightness(1.25); mix-blend-mode: screen; }
+
+/* Desktop Links */
+.nav-menu { display: flex; gap: 2.6rem; }
+.nav-link { font-size: .78rem; letter-spacing: .14em; text-transform: uppercase; position: relative; padding: 8px 0 4px; color: var(--charcoal); transition: color var(--dur-s) var(--ease); }
+.nav-link::after { content: ""; position: absolute; left: 0; bottom: 0; width: 0; height: 1px; background: currentColor; transition: width var(--dur-s) var(--ease); }
+.nav-link:hover::after, .nav-link:focus-visible::after { width: 100%; }
+.site-header:not(.scrolled):not(.on-dark):not(.menu-open) .nav-link { color: var(--white); }
+
+/* Toggle Button */
+.nav-toggle { display: none; width: 44px; height: 44px; position: relative; padding: 0; z-index: 1002; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+.nav-toggle span { position: absolute; left: 8px; right: 8px; height: 1.5px; background: var(--charcoal); transition: all var(--dur-s) var(--ease); pointer-events: none; border-radius: 2px; }
+.nav-toggle span:first-child { top: 16px; }
+.nav-toggle span:last-child { top: 26px; }
+.nav-toggle.open span:first-child { top: 21px; transform: rotate(45deg); }
+.nav-toggle.open span:last-child { top: 21px; transform: rotate(-45deg); }
+.site-header:not(.scrolled):not(.on-dark):not(.menu-open) .nav-toggle span { background: var(--white); }
+.nav-toggle.open span { background: var(--cream) !important; }
+
+/* Mobile Nav Overlay */
+@media (max-width: 991.98px) {
+  .nav-toggle { display: block; }
+  .nav-menu { position: fixed; inset: 0; background: var(--charcoal); flex-direction: column; justify-content: center; align-items: flex-start; gap: 1.6rem; padding: calc(5rem + var(--sat)) calc(var(--gutter) + env(safe-area-inset-left, 0px)) calc(2rem + var(--sab)) calc(var(--gutter) + env(safe-area-inset-left, 0px)); transform: translateY(-100%); opacity: 0; pointer-events: none; visibility: hidden; transition: all var(--dur-m) var(--ease); z-index: 1001; overflow-y: auto; }
+  .nav-menu.open { transform: translateY(0); opacity: 1; pointer-events: auto; visibility: visible; }
+  .nav-menu li { width: 100%; }
+  .nav-link { font-size: clamp(1.6rem, 5vw, 2.2rem); font-family: var(--serif); color: var(--cream); letter-spacing: .02em; text-transform: none; padding: .4rem 0; width: 100%; display: block; }
+  .nav-link::after { display: none; }
+}
+body.menu-locked { position: fixed; width: 100%; overflow: hidden; touch-action: none; }
+
+/* ==========================================================================
+   2. COMPONENTS (Buttons & Marquee)
+   ========================================================================== */
+.btn-tint, .btn-outline-tint { display: inline-flex; align-items: center; justify-content: center; padding: .9rem 1.8rem; min-height: 44px; font-size: clamp(.72rem, 1.1vw, .8rem); letter-spacing: .1em; text-transform: uppercase; transition: all var(--dur-s) var(--ease); cursor: pointer; }
+.btn-tint { background: var(--charcoal); color: var(--white); border: 1px solid var(--charcoal); }
+.btn-tint:hover, .btn-tint:focus-visible { background: var(--sage); border-color: var(--sage); }
+.btn-outline-tint { border: 1px solid var(--charcoal); color: var(--charcoal); margin-left: .8rem; }
+.btn-outline-tint:hover, .btn-outline-tint:focus-visible { background: var(--charcoal); color: var(--white); }
+@media (max-width: 575.98px) { .btn-outline-tint { margin-left: 0; margin-top: .8rem; } .btn-tint, .btn-outline-tint { width: 100%; } }
+
+.marquee { overflow: hidden; border-top: 1px solid rgba(23,23,23,.12); border-bottom: 1px solid rgba(23,23,23,.12); padding: 1.1rem 0; background: var(--cream); position: relative; z-index: 1; }
+.marquee-track { display: flex; align-items: center; gap: 2rem; width: max-content; white-space: nowrap; animation: marqueeScroll 32s linear infinite; will-change: transform; }
+.marquee-track span { font-family: var(--serif); font-style: italic; font-size: clamp(.95rem, 2vw, 1.2rem); color: var(--soft-grey); }
+.marquee-dash { color: var(--sage); font-style: normal !important; }
+@keyframes marqueeScroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }

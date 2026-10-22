@@ -1,0 +1,66 @@
+/* ==========================================================================
+   RESPONSIVE — Mobile, Tablet, Large Screens
+   ========================================================================== */
+
+/* Large Screens */
+@media (min-width: 1440px) { :root { --gutter: 5rem; } .section { padding: 9rem 0; } }
+@media (min-width: 1920px) { :root { --gutter: 6rem; } .section { padding: 10rem 0; } .hero-title { font-size: 8rem; } .section-heading { font-size: 4rem; } }
+@media (min-width: 2200px) { .container-fluid { max-width: 1800px; margin-inline: auto; } }
+
+/* Tablet & Mobile */
+@media (max-width: 991.98px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero-side { max-width: 100%; }
+  .hero-title { max-width: 100%; }
+  .scroll-indicator { display: none; }
+  
+  .work-item:nth-child(n) { grid-column: span 12; }
+  .work-media, .work-item:nth-child(even) .work-media { aspect-ratio: 4 / 3; }
+  .work-overlay { opacity: 1; background: linear-gradient(180deg, rgba(31,31,31,0) 45%, rgba(31,31,31,.6) 100%); }
+  .work-view { transform: none; }
+
+  .philosophy-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .process-track { grid-template-columns: repeat(2, 1fr); }
+  .process-step:not(:last-child)::after { display: none; }
+  
+  .materials-collage { height: clamp(300px, 52vw, 460px); }
+  .mat-img--1 { width: 38%; height: 60%; }
+  .mat-img--2 { width: 26%; height: 44%; left: 36%; top: 32%; }
+  .mat-img--3 { width: 32%; height: 56%; left: 54%; }
+  .mat-img--4 { width: 26%; height: 42%; }
+
+  .ig-grid { grid-template-columns: repeat(4, 1fr); }
+  .contact-actions { padding-top: 2rem; }
+}
+
+/* Small Tablet / Large Phone */
+@media (max-width: 767.98px) {
+  .hero-grid { padding-bottom: 3rem; }
+  
+  .process-track { grid-template-columns: 1fr; gap: 1.5rem; }
+  .process-step { padding-left: 1.4rem; border-left: 1px solid rgba(31,31,31,.16); }
+  
+  .materials-collage { height: auto; display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+  .mat-img { position: static; width: auto !important; height: 180px !important; }
+  
+  .about-body { grid-template-columns: 1fr; }
+  .about-portrait { max-width: 220px; }
+  
+  .ig-grid { grid-template-columns: repeat(3, 1fr); }
+  .footer-nav { margin: 2rem 0; }
+  .btn-tint, .btn-outline-tint { width: 100%; margin-left: 0; margin-top: .8rem; }
+}
+
+/* Small Phones */
+@media (max-width: 575.98px) {
+  .work-item:nth-child(n) { aspect-ratio: 4 / 5; }
+  .work-cat { margin-left: 0; width: 100%; }
+  .service-name { font-size: 1.3rem; }
+  .ig-grid { grid-template-columns: repeat(2, 1fr); gap: .5rem; }
+  .mat-img { height: 150px !important; }
+}
+@media (max-width: 360px) {
+  :root { --gutter: 1rem; }
+  .hero-title { font-size: 2.4rem; }
+  .section-heading { font-size: 1.8rem; }
+}

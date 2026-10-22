@@ -1,0 +1,11 @@
+/* ==========================================================================
+   STUDIO TINT — MAIN STYLESHEET
+   ========================================================================== */
+
+/* Importing your exact folder structure */
+@import url('CSS/base.css');
+@import url('CSS/header.css');
+@import url('CSS/hero.css');
+@import url('CSS/components.css');
+@import url('CSS/sections.css');
+@import url('CSS/responsive.css');

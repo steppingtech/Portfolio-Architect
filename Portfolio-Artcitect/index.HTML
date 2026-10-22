@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Studio Tint — Interior Design Studio</title>
+<meta name="description" content="Studio Tint is an interior design studio exploring the art of space through material, form, light and personal expression.">
+<meta property="og:title" content="Studio Tint — Interior Design Studio">
+<meta property="og:description" content="A design studio exploring the art of space. Minimal. Poetic. Personal.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_IN">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%231F1F1F%22/><rect x=%2230%22 y=%2230%22 width=%2240%22 height=%2240%22 fill=%22none%22 stroke=%22%23F7F7F7%22 stroke-width=%226%22/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="preloader" id="preloader" aria-hidden="true">
+  <img src="image/studio-tint-logo.png" alt="" class="preloader-logo">
+</div>
+<div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="site-header" id="siteHeader">
+  <nav class="container-fluid nav-inner" aria-label="Primary navigation">
+    <a href="#home" class="brand" aria-label="Studio Tint — home">
+      <img src="image/studio-tint-logo.png" alt="Studio Tint" class="brand-logo" width="180" height="30">
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle navigation menu">
+      <span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#work" class="nav-link">Work</a></li>
+      <li><a href="#studio" class="nav-link">About</a></li>
+      <li><a href="#services" class="nav-link">Services</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-media">
+      <img src="image/hero-bedroom.jpg" alt="Warm minimal bedroom interior" loading="eager" fetchpriority="high" width="2400" height="1600">
+    </div>
+    <div class="hero-grid container-fluid">
+      <p class="hero-eyebrow reveal" data-reveal>Studio Tint — Nagpur, India</p>
+      <h1 class="hero-title" data-split>The art<br>of space.</h1>
+      <div class="hero-side reveal" data-reveal>
+        <p class="hero-desc">A design studio exploring the art of space.</p>
+        <p class="hero-tag">Minimal. Poetic. Personal.</p>
+        <a href="#work" class="hero-cta"><span>Explore our work</span><i class="bi bi-arrow-down-right"></i></a>
+      </div>
+    </div>
+    <div class="scroll-indicator" aria-hidden="true">
+      <span class="scroll-line"></span>
+      <span class="scroll-word">Scroll</span>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Interior Design</span><span class="marquee-dash">—</span>
+      <span>Space Planning</span><span class="marquee-dash">—</span>
+      <span>Material Study</span><span class="marquee-dash">—</span>
+      <span>Spatial Concepts</span><span class="marquee-dash">—</span>
+      <span>Nagpur, India</span><span class="marquee-dash">—</span>
+      <span>Interior Design</span><span class="marquee-dash">—</span>
+      <span>Space Planning</span><span class="marquee-dash">—</span>
+      <span>Material Study</span><span class="marquee-dash">—</span>
+      <span>Spatial Concepts</span><span class="marquee-dash">—</span>
+      <span>Nagpur, India</span><span class="marquee-dash">—</span>
+    </div>
+  </div>
+
+  <!-- INTRODUCTION -->
+  <section class="section intro-section" id="studio">
+    <div class="container-fluid">
+      <div class="row intro-row">
+        <div class="col-lg-7 reveal" data-reveal>
+          <p class="section-label">01 — Studio</p>
+          <h2 class="intro-heading" data-split>We design spaces that feel like you.</h2>
+        </div>
+        <div class="col-lg-4 offset-lg-1 intro-text-col reveal" data-reveal>
+          <p class="intro-text">Studio Tint explores the relationship between space, material, form and human experience. Every project begins with an idea and evolves into a space that feels intentional, personal and timeless.</p>
+          <div class="intro-mark" aria-hidden="true"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SELECTED WORK -->
+  <section class="section work-section" id="work">
+    <div class="container-fluid">
+      <div class="row align-items-end work-heading-row">
+        <div class="col-lg-7 reveal" data-reveal>
+          <p class="section-label">02 — Portfolio</p>
+          <h2 class="section-heading">Selected work</h2>
+        </div>
+        <div class="col-lg-4 offset-lg-1 reveal" data-reveal>
+          <p class="section-sub">A collection of spaces, ideas and material explorations.</p>
+        </div>
+      </div>
+      <div class="work-grid">
+        <a href="#" class="work-item work-item--lg reveal" data-reveal>
+          <div class="work-media">
+            <img src="image/residential-interior.jpg" alt="Residential living room" loading="lazy">
+            <div class="work-overlay"><span class="work-view">View project <i class="bi bi-arrow-right"></i></span></div>
+          </div>
+          <div class="work-meta"><span class="work-num">01</span><span class="work-name">Residential Interior</span><span class="work-cat">Interior Design — Nagpur</span></div>
+        </a>
+        <a href="#" class="work-item work-item--sm reveal" data-reveal>
+          <div class="work-media">
+            <img src="image/material-study.jpg" alt="Material study" loading="lazy">
+            <div class="work-overlay"><span class="work-view">View project <i class="bi bi-arrow-right"></i></span></div>
+          </div>
+          <div class="work-meta"><span class="work-num">02</span><span class="work-name">Material Study</span><span class="work-cat">Exploration</span></div>
+        </a>
+        <a href="#" class="work-item work-item--sm reveal" data-reveal>
+          <div class="work-media">
+            <img src="image/bedroom-interior.jpg" alt="Bedroom interior" loading="lazy">
+            <div class="work-overlay"><span class="work-view">View project <i class="bi bi-arrow-right"></i></span></div>
+          </div>
+          <div class="work-meta"><span class="work-num">03</span><span class="work-name">Bedroom Interior</span><span class="work-cat">Interior Design — Nagpur</span></div>
+        </a>
+        <a href="#" class="work-item work-item--lg reveal" data-reveal>
+          <div class="work-media">
+            <img src="image/living-space.jpg" alt="Living space" loading="lazy">
+            <div class="work-overlay"><span class="work-view">View project <i class="bi bi-arrow-right"></i></span></div>
+          </div>
+          <div class="work-meta"><span class="work-num">04</span><span class="work-name">Living Space</span><span class="work-cat">Interior Design — Nagpur</span></div>
+        </a>
+        <a href="#" class="work-item work-item--sm reveal" data-reveal>
+          <div class="work-media">
+            <img src="image/project-custom-mirrors.jpg" alt="Custom mirrors" loading="lazy">
+            <div class="work-overlay"><span class="work-view">View project <i class="bi bi-arrow-right"></i></span></div>
+          </div>
+          <div class="work-meta"><span class="work-num">05</span><span class="work-name">Custom Furniture</span><span class="work-cat">Detail</span></div>
+        </a>
+        <a href="#" class="work-item work-item--sm reveal" data-reveal>
+          <div class="work-media">
+            <img src="image/spatial-concept.jpg" alt="Spatial concept" loading="lazy">
+            <div class="work-overlay"><span class="work-view">View project <i class="bi bi-arrow-right"></i></span></div>
+          </div>
+          <div class="work-meta"><span class="work-num">06</span><span class="work-name">Spatial Concept</span><span class="work-cat">Concept Study</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY -->
+  <section class="section philosophy-section">
+    <div class="container-fluid">
+      <p class="section-label reveal" data-reveal>03 — Philosophy</p>
+      <h2 class="philosophy-heading">
+        <span class="reveal" data-reveal>Minimal.</span>
+        <span class="reveal" data-reveal>Poetic.</span>
+        <span class="reveal" data-reveal>Personal.</span>
+      </h2>
+      <div class="philosophy-grid">
+        <div class="philosophy-item reveal" data-reveal>
+          <span class="philosophy-index">01</span>
+          <h3 class="philosophy-title">Minimal</h3>
+          <p class="philosophy-text">Removing the unnecessary to make room for what matters.</p>
+        </div>
+        <div class="philosophy-item reveal" data-reveal>
+          <span class="philosophy-index">02</span>
+          <h3 class="philosophy-title">Poetic</h3>
+          <p class="philosophy-text">Using light, texture, material and form to create emotion.</p>
+        </div>
+        <div class="philosophy-item reveal" data-reveal>
+          <span class="philosophy-index">03</span>
+          <h3 class="philosophy-title">Personal</h3>
+          <p class="philosophy-text">Creating spaces shaped around the people who inhabit them.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section services-section" id="services">
+    <div class="container-fluid">
+      <p class="section-label reveal" data-reveal>04 — Services</p>
+      <h2 class="section-heading reveal" data-reveal>What we do</h2>
+      <ul class="services-list">
+        <li class="service-row reveal" data-reveal data-preview="image/residential-interior.jpg">
+          <span class="service-num">01</span><span class="service-name">Interior Design</span><i class="bi bi-arrow-up-right service-arrow"></i>
+        </li>
+        <li class="service-row reveal" data-reveal data-preview="image/living-space.jpg">
+          <span class="service-num">02</span><span class="service-name">Space Planning</span><i class="bi bi-arrow-up-right service-arrow"></i>
+        </li>
+        <li class="service-row reveal" data-reveal data-preview="image/spatial-concept.jpg">
+          <span class="service-num">03</span><span class="service-name">3D Visualization</span><i class="bi bi-arrow-up-right service-arrow"></i>
+        </li>
+        <li class="service-row reveal" data-reveal data-preview="image/material-study.jpg">
+          <span class="service-num">04</span><span class="service-name">Material &amp; Finish Selection</span><i class="bi bi-arrow-up-right service-arrow"></i>
+        </li>
+        <li class="service-row reveal" data-reveal data-preview="image/project-custom-mirrors.jpg">
+          <span class="service-num">05</span><span class="service-name">Furniture &amp; Custom Elements</span><i class="bi bi-arrow-up-right service-arrow"></i>
+        </li>
+        <li class="service-row reveal" data-reveal data-preview="image/bedroom-interior.jpg">
+          <span class="service-num">06</span><span class="service-name">Design Development</span><i class="bi bi-arrow-up-right service-arrow"></i>
+        </li>
+      </ul>
+      <div class="service-preview" id="servicePreview" aria-hidden="true">
+        <img id="servicePreviewImg" src="" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section process-section">
+    <div class="container-fluid">
+      <p class="section-label reveal" data-reveal>05 — Process</p>
+      <h2 class="section-heading reveal" data-reveal>How we work</h2>
+      <div class="process-track">
+        <div class="process-step reveal" data-reveal><span class="process-num">01</span><h3 class="process-title">Discover</h3><p class="process-text">Understanding the client, space and requirements.</p></div>
+        <div class="process-step reveal" data-reveal><span class="process-num">02</span><h3 class="process-title">Concept</h3><p class="process-text">Ideas become sketches, materials and visual language.</p></div>
+        <div class="process-step reveal" data-reveal><span class="process-num">03</span><h3 class="process-title">Design</h3><p class="process-text">Plans, details and visualizations.</p></div>
+        <div class="process-step reveal" data-reveal><span class="process-num">04</span><h3 class="process-title">Create</h3><p class="process-text">Turning the design into a physical space.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MATERIALS -->
+  <section class="section materials-section">
+    <div class="container-fluid">
+      <div class="row align-items-end">
+        <div class="col-lg-6 reveal" data-reveal>
+          <p class="section-label">06 — Detail</p>
+          <h2 class="section-heading">Material matters.</h2>
+        </div>
+        <div class="col-lg-4 offset-lg-2 reveal" data-reveal>
+          <p class="section-sub">Texture, material, light and form — the details that shape how a space feels.</p>
+        </div>
+      </div>
+      <div class="materials-collage">
+        <div class="mat-img mat-img--1 reveal" data-reveal><img src="image/material-study.jpg" alt="Wood" loading="lazy"></div>
+        <div class="mat-img mat-img--2 reveal" data-reveal><img src="image/project-custom-mirrors.jpg" alt="Fabric" loading="lazy"></div>
+        <div class="mat-img mat-img--3 reveal" data-reveal><img src="image/residential-interior.jpg" alt="Stone" loading="lazy"></div>
+        <div class="mat-img mat-img--4 reveal" data-reveal><img src="image/living-space.jpg" alt="Metal" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about-section" id="about">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-5 reveal" data-reveal>
+          <p class="section-label">07 — About</p>
+          <h2 class="about-heading">The person behind the space.</h2>
+        </div>
+        <div class="col-lg-6 offset-lg-1">
+          <div class="about-body">
+            <div class="about-portrait reveal" data-reveal>
+              <img src="image/owner-pic.png" alt="Mohammad Anas" loading="lazy">
+            </div>
+            <div class="about-info reveal" data-reveal>
+              <h3 class="about-name">Mohammad Anas</h3>
+              <p class="about-role">Founder / Interior Designer</p>
+              <p class="about-bio">[Editable bio — a short introduction to Mohammad's approach to design, the ideas that guide his work, and what drives Studio Tint's practice.]</p>
+              <a href="https://www.instagram.com/m0hammad_anas" target="_blank" rel="noopener" class="about-ig"><i class="bi bi-instagram"></i> @m0hammad_anas</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTAGRAM -->
+  <section class="section instagram-section">
+    <div class="container-fluid">
+      <div class="row align-items-end">
+        <div class="col-lg-7 reveal" data-reveal>
+          <p class="section-label">08 — Follow</p>
+          <h2 class="section-heading">Follow the process</h2>
+          <p class="section-sub">From sketches to spaces.</p>
+        </div>
+        <div class="col-lg-4 offset-lg-1 reveal" data-reveal>
+          <a href="https://www.instagram.com/studiotint.co/" target="_blank" rel="noopener" class="ig-handle">@studiotint.co</a>
+          <a href="https://www.instagram.com/studiotint.co/" target="_blank" rel="noopener" class="btn-outline-tint mt-3">Follow on Instagram</a>
+        </div>
+      </div>
+      <div class="ig-grid">
+        <a href="https://www.instagram.com/studiotint.co/" target="_blank" rel="noopener" class="ig-cell reveal" data-reveal><img src="image/residential-interior.jpg" alt="Detail" loading="lazy"></a>
+        <a href="https://www.instagram.com/studiotint.co/" target="_blank" rel="noopener" class="ig-cell reveal" data-reveal><img src="image/living-space.jpg" alt="Detail" loading="lazy"></a>
+        <a href="https://www.instagram.com/studiotint.co/" target="_blank" rel="noopener" class="ig-cell reveal" data-reveal><img src="image/material-study.jpg" alt="Detail" loading="lazy"></a>
+        <a href="https://www.instagram.com/studiotint.co/" target="_blank" rel="noopener" class="ig-cell reveal" data-reveal><img src="image/bedroom-interior.jpg" alt="Detail" loading="lazy"></a>
+        <a href="https://www.instagram.com/studiotint.co/" target="_blank" rel="noopener" class="ig-cell reveal" data-reveal><img src="image/spatial-concept.jpg" alt="Detail" loading="lazy"></a>
+        <a href="https://www.instagram.com/studiotint.co/" target="_blank" rel="noopener" class="ig-cell reveal" data-reveal><img src="image/project-custom-mirrors.jpg" alt="Detail" loading="lazy"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+    <div class="container-fluid">
+      <p class="section-label reveal" data-reveal>09 — Contact</p>
+      <h2 class="contact-heading reveal" data-reveal>Have a space<br>in mind?</h2>
+      <p class="contact-sub reveal" data-reveal>Let's talk about it.</p>
+      <div class="row contact-details">
+        <div class="col-lg-5 reveal" data-reveal>
+          <dl class="contact-list">
+            <div class="contact-row"><dt>Studio</dt><dd>Studio Tint, Nagpur, India</dd></div>
+            <div class="contact-row"><dt>Phone</dt><dd><a href="tel:+919270019818">+91 92700 19818</a></dd></div>
+            <div class="contact-row"><dt>WhatsApp</dt><dd><a href="https://wa.me/919270019818" target="_blank" rel="noopener">+91 92700 19818</a></dd></div>
+            <div class="contact-row"><dt>Email</dt><dd><a href="mailto:hello@studiotint.co">hello@studiotint.co</a></dd></div>
+            <div class="contact-row"><dt>Instagram</dt><dd><a href="https://www.instagram.com/studiotint.co/" target="_blank" rel="noopener">@studiotint.co</a></dd></div>
+          </dl>
+        </div>
+        <div class="col-lg-5 offset-lg-2 contact-actions reveal" data-reveal>
+          <a href="mailto:hello@studiotint.co" class="btn-tint">Start a project</a>
+          <a href="https://wa.me/919270019818" target="_blank" rel="noopener" class="btn-outline-tint">WhatsApp us</a>
+          <a href="https://www.instagram.com/studiotint.co/" target="_blank" rel="noopener" class="btn-outline-tint">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-5">
+        <img src="image/studio-tint-logo.png" alt="Studio Tint" class="footer-logo" width="180" height="30">
+        <p class="footer-tagline">The art of space.<br>Minimal. Poetic. Personal.</p>
+      </div>
+      <div class="col-lg-3 offset-lg-1">
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#work">Work</a>
+          <a href="#studio">About</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <div class="col-lg-3">
+        <a href="https://www.instagram.com/studiotint.co/" target="_blank" rel="noopener" class="footer-ig">
+          <i class="bi bi-instagram"></i> Instagram
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span><b><u> SQ</u></b> 2026 Studio Tint. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
